@@ -1,13 +1,33 @@
+html,
 body {
-  margin: 0; padding: 10px;
-  background: transparent;
-  font-family: 'Satoshi', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
 }
 
+body {
+  font-family: 'Satoshi', sans-serif;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+html.embed-mode,
+html.embed-mode body {
+  width: 210px !important;
+  height: 100px !important;
+  min-width: 210px !important;
+  min-height: 100px !important;
+  max-width: 210px !important;
+  max-height: 100px !important;
+}
+
+html.embed-mode .builder-ui {
+  display: none !important;
+}
+/* ---
 /* ---------------- BUILDER LAYOUT ---------------- */
 .builder-ui {
   display: flex;
