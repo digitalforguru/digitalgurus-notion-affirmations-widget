@@ -684,6 +684,12 @@ html.embed-mode .builder-page {
 
 html.embed-mode .embed-widget {
   display: flex !important;
+  width: var(--embed-width, 145px) !important;
+  height: var(--embed-height, 145px) !important;
+  min-width: var(--embed-width, 145px) !important;
+  min-height: var(--embed-height, 145px) !important;
+  max-width: var(--embed-width, 145px) !important;
+  max-height: var(--embed-height, 145px) !important;
   border-radius: 22px !important;
   overflow: hidden !important;
   margin: 0 !important;
