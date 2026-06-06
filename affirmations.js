@@ -1,250 +1,347 @@
 const affirmations = [
-  "you are blooming in your own time",
-  "soft days are still progress",
-  "you are gentle and that is powerful",
-  "rest is part of the process",
-  "small steps still move you forward",
-  "your worth is not measured by productivity",
-  "you bring light just by being here",
-  "it’s okay to move slow",
-  "you are allowed to take up space",
-  "your softness is your strength",
-  "progress, not perfection",
-  "you deserve calm mornings",
-  "you are doing better than you think",
-  "slow growth is still growth",
-  "your presence is a gift",
-  "tiny seeds become wildflowers",
-  "you are enough exactly as you are",
-  "there’s no rush to bloom",
-  "your journey is your own",
-  "the sun always returns",
-  "you are a calm in the storm",
-  "you carry peace inside you",
-  "your kindness is contagious",
-  "gentle hearts move mountains",
-  "you are a safe harbor",
-  "breathe deeply, you are home",
-  "softness is a quiet strength",
-  "you deserve gentle love",
-  "your story is still unfolding",
-  "hope blooms in stillness",
-  "you are worthy of rest",
-  "you shine even on cloudy days",
-  "every petal opens in its own time",
-  "your light is a warm glow",
-  "you are rooted and growing",
-  "calmness flows through you",
-  "your heart beats a gentle rhythm",
-  "you are more than enough",
-  "you are a tender soul",
-  "each day is a fresh start",
-  "your dreams are valid and true",
-  "soft moments nourish your spirit",
-  "you bring beauty to the world",
-  "you are gentle like a morning breeze",
-  "your spirit blooms quietly",
-  "peace begins within you",
-  "you are wrapped in kindness",
-  "you are growing at your own pace",
-  "you have a soft and steady strength",
-  "you deserve moments of stillness",
-  "your gentle soul is a light",
-  "you are surrounded by love",
-  "you are worthy of care",
-  "you make the world softer",
-  "your heart is a quiet garden",
-  "you are blooming beautifully",
-  "your kindness creates ripples",
-  "rest fuels your growth",
-  "you are a calming presence",
-  "your calm is contagious",
-  "gentle love heals deeply",
-  "you are patient with yourself",
-  "you shine with quiet grace",
-  "each breath brings peace",
-  "you are growing like wildflowers",
-  "soft hearts are brave hearts",
-  "you are enough every moment",
-  "you deserve time to breathe",
-  "your warmth comforts others",
-  "you are a gift to this world",
-  "you are learning and blossoming",
-  "your soul is wrapped in light",
-  "gentle hands can move mountains",
-  "you are kind to yourself",
-  "soft moments bring strength",
-  "you are a peaceful warrior",
-  "your presence is calming",
-  "you are loved for who you are",
-  "you carry grace within",
-  "your spirit shines softly",
-  "you are treasured and loved",
-  "you are worthy of quiet joy",
-  "your light touches others",
-  "gentle days heal deeply",
-  "you are patient with growth",
-  "you deserve love and rest",
-  "your calm spirit inspires",
-  "you bring peace to chaos",
-  "you are a soft light in darkness",
-  "your heart is full of kindness",
-  "you are growing quietly strong",
-  "gentle strength is enduring",
-  "you are a breath of fresh air",
-  "your soul sings softly",
-  "you deserve gentle moments",
-  "you are wrapped in gentle grace",
-  "your presence soothes others",
-  "you are a calm steady flame",
-  "softness is your power",
-  "you are becoming beautifully",
-  "your heart beats with courage",
-  "you carry love with you",
-  "you are a quiet strength",
-  "gentle words heal wounds",
-  "you are enough as you are",
-  "your spirit is tender and strong",
-  "you bring light without trying",
-  "you are a calm in a busy world",
-  "your kindness is your crown",
-  "you deserve peace and love",
-  "you are growing with grace",
-  "your soul is full of hope",
-  "you are soft yet unbreakable",
-  "gentle love changes the world",
-  "you are worthy of rest and joy",
-  "your calm heart guides you",
-  "you carry quiet strength daily",
-  "you are gentle with yourself",
-  "your presence is a soothing balm",
-  "you are light in the quiet",
-  "you are blooming in stillness",
-  "your soul is wrapped in calm",
-  "gentle hearts shine the brightest",
-  "you are a treasure to many",
-  "you deserve kind thoughts",
-  "you are healing with time",
-  "your spirit flows with grace",
-  "you carry softness with strength",
-  "you are growing through quiet days",
-  "gentle care heals your soul",
-  "you are a peaceful presence",
-  "your heart is a soft home",
-  "you are a calm breeze",
-  "you deserve quiet moments",
-  "your light shines even quietly",
-  "you are becoming who you are meant to be",
-  "gentle souls are fierce and brave",
-  "you are surrounded by calm",
-  "you carry hope within",
-  "your spirit blooms with kindness",
-  "you are a soft whisper of love",
-  "you deserve gentle rest",
-  "you are a light that never fades",
-  "your calm is your gift",
-  "you are growing with patience",
-  "gentle strength carries you far",
-  "you are soft and brave",
-  "your heart beats with quiet power",
-  "you deserve peace every day",
-  "you are a gentle ray of sunshine",
-  "your spirit shines through softly",
-  "you carry calm wherever you go",
-  "you are blossoming beautifully",
-  "gentle moments heal deeply",
-  "you are enough, always",
-  "your kindness lights the way",
-  "you are patient with your journey",
-  "your calm heart is your compass",
-  "you deserve love and peace",
-  "you are a quiet light in the dark",
-  "your soul is soft and strong",
-  "gentle care nurtures you",
-  "you are growing through love",
-  "you carry kindness with you",
-  "you are a peaceful soul",
-  "your presence calms others",
-  "you deserve soft hugs and warmth",
-  "you are blooming like spring flowers",
-  "gentle hearts bring healing",
-  "you are enough exactly now",
-  "your spirit flows with calmness",
-  "you carry peace in your breath",
-  "you are a soft melody",
-  "your heart is wrapped in love",
-  "you deserve quiet joy",
-  "you are becoming beautifully strong",
-  "gentle strength is your nature",
-  "you are a calm oasis",
-  "your light is soft but powerful",
-  "you carry hope in your smile",
-  "you are blooming with grace",
-  "gentle moments bring strength",
-  "you are a gift to yourself",
-  "your soul shines quietly",
-  "you deserve gentle love daily",
-  "you are growing in kindness",
-  "your calm spirit comforts many",
-  "you carry softness in your soul",
-  "you are a quiet beacon",
-  "your heart beats with love",
-  "you deserve gentle care",
-  "you are blossoming with patience",
-  "gentle words soothe your soul",
-  "you are enough in every way",
-  "your spirit flows gently",
-  "you carry peace like a flower",
-  "you are a soft light",
-  "your calm heart guides your path",
-  "you deserve rest and kindness",
-  "you are growing through stillness",
-  "gentle love fills your soul",
-  "you are a peaceful light",
-  "your presence brings calm",
-  "you carry hope gently",
-  "you are blooming quietly",
-  "your heart is a gentle garden",
-  "you deserve soft moments",
-  "you are becoming softly strong",
-  "gentle strength shines through",
-  "you are a calm and steady flame",
-  "your light is gentle but bright",
-  "you carry love quietly",
-  "you are blooming like the dawn",
-  "gentle moments heal your heart",
-  "you are enough as you grow",
-  "your spirit is soft and bright",
-  "you deserve gentle rest",
-  "you are growing with love",
-  "your calm soul comforts many",
-  "you carry kindness within",
-  "you are a quiet light in the world",
-  "your heart beats with gentle strength",
-  "you deserve peaceful days",
-  "you are blossoming with grace",
-  "gentle love guides you",
-  "you are a soft and steady light",
-  "your presence is soothing",
-  "you carry calmness daily",
-  "you are blooming beautifully inside",
-  "your spirit flows with love",
-  "you deserve soft and quiet joy",
-  "you are growing gently",
-  "gentle strength lives in you",
-  "you are a calm and loving soul",
-  "your light shines softly",
-  "you carry hope quietly",
-  "you are blooming with peace",
-  "gentle moments nourish your heart",
-  "you are enough in this moment",
-  "your spirit is calm and kind",
-  "you deserve gentle care and love",
-  "you are growing with patience and grace",
-  "your calm heart comforts those around you",
-  "you carry kindness softly",
-  "you are a quiet beacon of love",
-  "your heart beats with peaceful strength",
-  "you deserve rest and gentle moments",
-  "you are blossoming quietly with grace"
+  “i am beautiful”
+“i am worthy”
+“i am enough”
+“i am loved”
+“i am strong”
+“i am capable”
+“i am growing”
+“i am healing”
+“i am resilient”
+“i am confident”
+“i am kind”
+“i am brave”
+“i am valuable”
+“i am deserving”
+“i am special”
+“i am smart”
+“i am creative”
+“i am peaceful”
+“i am calm”
+“i am grounded”
+“i am radiant”
+“i am glowing”
+“i am pretty”
+“i am cute”
+“i am lovable”
+“i am appreciated”
+“i am respected”
+“i am supported”
+“i am safe”
+“i am protected”
+“i am worthy of good things”
+“i am worthy of rest”
+“i am worthy of happiness”
+“i am worthy of success”
+“i am worthy of love”
+“i am proud of myself”
+“i am becoming who i want to be”
+“i am exactly where i need to be”
+“i am allowed to grow”
+“i am allowed to make mistakes”
+“i am allowed to start over”
+“i am enough as i am”
+“i am a good person”
+“i am a beautiful soul”
+“i am full of potential”
+“i am making progress”
+“i am doing my best”
+“i am getting stronger every day”
+“i am learning and growing”
+“i am becoming more confident”
+“i trust myself”
+“i trust my journey”
+“i trust my decisions”
+“i trust the timing of my life”
+“i believe in myself”
+“i believe in my abilities”
+“i believe good things are coming”
+“i choose happiness”
+“i choose peace”
+“i choose kindness”
+“i choose myself”
+“i choose growth”
+“i love myself”
+“i love who i am becoming”
+“i love my life”
+“i love my uniqueness”
+“i love the person i am”
+“i accept myself”
+“i accept my imperfections”
+“i accept where i am today”
+“i forgive myself”
+“i forgive my past”
+“i deserve happiness”
+“i deserve kindness”
+“i deserve respect”
+“i deserve peace”
+“i deserve abundance”
+“i deserve good things”
+“i deserve to be loved”
+“i deserve to take care of myself”
+“i deserve to rest”
+“i deserve to shine”
+“i attract positive energy”
+“i attract healthy relationships”
+“i attract opportunities”
+“i attract abundance”
+“i attract good things into my life”
+“i welcome joy”
+“i welcome love”
+“i welcome new beginnings”
+“i welcome growth”
+“i welcome positive change”
+“my feelings matter”
+“my voice matters”
+“my dreams matter”
+“my happiness matters”
+“my future is bright”
+“my heart is open”
+“my energy is valuable”
+“my presence is a gift”
+“my life is meaningful”
+“my journey is unfolding beautifully”
+“i bloom where i am planted”
+“i am soft and strong”
+“i am sunshine in human form”
+“i am a work of art”
+“i am glowing from the inside out”
+“i am becoming the girl i dreamed of”
+“i am the main character of my story”
+“i am allowed to romanticize my life”
+“i am creating a beautiful life for myself”
+“i am magic in my own way”
+“i am sweet to myself”
+“i am my own safe place”
+“i am worthy of every good thing coming my way”
+“i am growing into something beautiful”
+“i am the love of my own life” 
+“i am becoming more me every day”
+“i am allowed to shine”
+“i am worthy of soft things”
+“i am attracting beautiful opportunities”
+“i am blooming at my own pace”
+“i am proud of how far i’ve come”
+“i am safe to be myself”
+“i am worthy of gentle love”
+“i am creating a life i enjoy”
+“i am enough today”
+
+“i am learning to trust myself”
+“i am growing through what i go through”
+“i am deserving of good mornings”
+“i am worthy of care”
+“i am choosing myself”
+“i am letting go of what no longer serves me”
+“i am stronger than i realize”
+“i am becoming more confident”
+“i am worthy of being celebrated”
+“i am doing better than i think”
+
+“i am allowed to take breaks”
+“i am worthy of rest without guilt”
+“i am kind to myself”
+“i am patient with my growth”
+“i am worthy of healthy relationships”
+“i am attracting peace”
+“i am attracting joy”
+“i am attracting kindness”
+“i am attracting abundance”
+“i am attracting the right people”
+
+“i am a beautiful person inside and out”
+“i am glowing in my own way”
+“i am allowed to move slowly”
+“i am worthy of happiness today”
+“i am grateful for who i am”
+“i am becoming my own best friend”
+“i am enough without proving myself”
+“i am proud of my effort”
+“i am proud of my progress”
+“i am making space for good things”
+
+“i am letting myself be happy”
+“i am worthy of softness”
+“i am creating new beginnings”
+“i am learning every day”
+“i am building a beautiful future”
+“i am open to receiving love”
+“i am open to receiving blessings”
+“i am open to receiving support”
+“i am worthy of every opportunity”
+“i am worthy of success”
+
+“i am not behind in life”
+“i am exactly where i need to be”
+“i am trusting the process”
+“i am becoming stronger every day”
+“i am capable of amazing things”
+“i am capable of handling challenges”
+“i am capable of creating change”
+“i am worthy of taking up space”
+“i am allowed to be seen”
+“i am allowed to be proud of myself”
+
+“i am filled with possibility”
+“i am choosing peace over pressure”
+“i am worthy of feeling good”
+“i am worthy of a beautiful life”
+“i am worthy of forgiveness”
+“i am worthy of second chances”
+“i am worthy of kindness from myself”
+“i am learning to love myself more”
+“i am learning to trust life”
+“i am learning to let go”
+
+“i am surrounded by opportunities”
+“i am welcoming positive change”
+“i am welcoming joy into my life”
+“i am welcoming growth”
+“i am welcoming abundance”
+“i am welcoming peace”
+“i am welcoming love”
+“i am embracing who i am”
+“i am embracing my journey”
+“i am embracing new possibilities”
+
+“i deserve good things”
+“i deserve to feel loved”
+“i deserve to feel confident”
+“i deserve to feel safe”
+“i deserve to feel appreciated”
+“i deserve to be happy”
+“i deserve healthy boundaries”
+“i deserve healthy love”
+“i deserve a fresh start”
+“i deserve to dream big”
+
+“i wake up grateful”
+“i wake up ready for good things”
+“i wake up with purpose”
+“i wake up stronger than yesterday”
+“i choose joy today”
+“i choose peace today”
+“i choose confidence today”
+“i choose self-love today”
+“i choose growth today”
+“i choose to believe in myself today” 
+“progress over perfection”
+“smile often”
+“keep going”
+“one step at a time”
+“slow growth is growth”
+“good things take time”
+“trust the process”
+“choose yourself”
+“rest is productive”
+“small steps matter”
+
+“you’ve got this”
+“give yourself grace”
+“be proud of yourself”
+“let yourself bloom”
+“keep showing up”
+“stay soft”
+“stay curious”
+“stay hopeful”
+“stay present”
+“stay kind”
+
+“romanticize your life”
+“find joy in today”
+“create your own sunshine”
+“make today count”
+“embrace the journey”
+“keep growing”
+“chase your dreams”
+“welcome new beginnings”
+“breathe and begin again”
+“let it be easy”
+
+“be gentle with yourself”
+“your pace is enough”
+“you are on your way”
+“today is a fresh start”
+“better days are coming”
+“focus on the good”
+“protect your peace”
+“choose happiness”
+“celebrate small wins”
+“keep blooming”
+
+“you deserve good things”
+“your feelings matter”
+“your dreams matter”
+“your voice matters”
+“your effort matters”
+“you belong here”
+“you are worthy”
+“you are loved”
+“you are enough”
+“you are growing”
+
+“let yourself rest”
+“give yourself credit”
+“make room for joy”
+“keep the faith”
+“growth takes patience”
+“be where your feet are”
+“live in the moment”
+“choose peace daily”
+“trust yourself more”
+“believe in yourself”
+
+“softness is strength”
+“healing is not linear”
+“progress is beautiful”
+“growth looks good on you”
+“every day is day one”
+“your future is bright”
+“keep your heart open”
+“slow down sweetheart”
+“everything starts somewhere”
+“just keep swimming” 
+
+“sunshine follows storms”
+“flowers bloom slowly”
+“good energy only”
+“peace begins within”
+“joy is everywhere”
+“today holds possibilities”
+“there is beauty ahead”
+“your time will come”
+“keep choosing joy”
+“life is unfolding beautifully”
+
+“water yourself too”
+“bloom unapologetically”
+“protect your sparkle”
+“be your own safe place”
+“choose what feels right”
+“fall in love with life”
+“make yourself proud”
+“keep watering your dreams”
+“shine without permission”
+“grow through it”
+
+“little by little”
+“one day at a time”
+“all good things”
+“peace over pressure”
+“less rushing more living”
+“soft heart strong mind”
+“breathe through it”
+“you can do hard things”
+“becoming not arriving”
+
+“main character energy”
+“pretty mind pretty life”
+“bloom baby bloom”
+“soft life season”
+“angel energy only”
+“cute things await”
+“glow differently”
+“living my answered prayers”
+“made for more”
+“watch me grow”
 ];
