@@ -652,12 +652,12 @@ body.appearance-dark .preview-frame {
 
 html.embed-mode,
 html.embed-mode body {
-  width: 145px !important;
-  height: 145px !important;
-  min-width: 145px !important;
-  min-height: 145px !important;
-  max-width: 145px !important;
-  max-height: 145px !important;
+  width: var(--embed-width, 145px) !important;
+  height: var(--embed-height, 145px) !important;
+  min-width: var(--embed-width, 145px) !important;
+  min-height: var(--embed-height, 145px) !important;
+  max-width: var(--embed-width, 145px) !important;
+  max-height: var(--embed-height, 145px) !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
@@ -694,7 +694,6 @@ html.embed-mode .embed-widget {
   overflow: hidden !important;
   margin: 0 !important;
 }
-
 /* MOBILE */
 
 @media (max-width: 700px) {
